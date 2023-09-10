@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        body {
+            background-color: yellow;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: row;
+            /* Change to row for horizontal layout */
+            align-items: flex-start;
+            margin-top: 40px;
+            padding-left: 30px;
+        }
+
+        .tile {
+            width: 200px;
+            height: 50px;
+            background-color: white;
+            margin-bottom: 10px;
+            text-align: left;
+            line-height: 50px;
+            font-size: 24px;
+            position: relative;
+            display: flex;
+            justify-content: space-between;
+            padding-right: 10px;
+            /* Add padding to separate text from the right edge */
+        }
+
+        .black-strip {
+            position: absolute;
+            width: 25px;
+            height: 100%;
+            background-color: black;
+            right: -10px;
+            top: 0;
+        }
+
+        .tile a {
+            text-decoration: none;
+            color: rgb(0, 4, 255);
+        }
+
+        .info {
+            flex: 1;
+            padding: 20px;
+        }
+
+        .title {
+            position: center;
+            color: purple;
+            font-size: 45px;
+            margin-bottom: 25px;
+            margin-left: 50px;
+        }
+
+        .info p {
+            color: purple;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="menu">
+            <div class="tile">
+                <div class="black-strip"></div>
+                <a href="home.html">Home page</a>
+            </div>
+            <div class="tile">
+                <div class="black-strip"></div>
+                <a href="music.html">Musings</a>
+            </div>
+            <div class="tile">
+                <div class="black-strip"></div>
+                <a href="mytown.html">My Town</a>
+            </div>
+            <div class="tile">
+                <div class="black-strip"></div>
+                <a href="links.html">Links</a>
+            </div>
+        </div>
+        <div class="info">
+            <div class="title">My first styled page</div>
+            <p>
+                Welcome to my styled page!</p>
+            <p>It lacks images, but at least it has style. And it has links, even if they don't go anywhere...</p>
+            <p>There should be more here, but I don't know what yet.</p>
+            <p>Made 10 september 2023
+                by Lalith.
+            </p>
+        </div>
+    </div>
+</body>
+
+</html>
